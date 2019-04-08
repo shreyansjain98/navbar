@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheets/nb.css"/>
+	<title>
+		Nav
+	</title>
+</head>
+<body>
+	<div class="nbcontainer">
+		<div class="logo nbpart">
+			<img class="logopic" src="img/logo.jpg">
+		</div>
+		<div class="menu nbpart">
+			<ul class="menulist">
+				<li class="opt">
+					Option 1
+				</li>
+				<li class="opt">
+					Option 2
+				</li>
+				<li class="opt">
+					Option 3
+				</li>
+				<li class="opt">
+					Option 4
+				</li>
+				<li class="togbut" id=togbut>
+					XXX
+				</li>
+			</ul>
+		</div>
+		<!-- <div id="resmenu">
+			<ul class="resmenulist">
+				<li class="resopt">
+					Option 1
+				</li>
+				<li class="resopt">
+					Option 2
+				</li>
+				<li class="resopt">
+					Option 3
+				</li>
+				<li class="resopt">
+					Option 4
+				</li>
+			</ul>
+		</div> -->
+	</div>
+	<div id="resmenu">
+			<ul class="resmenulist">
+				<li class="resopt">
+					Option 1
+				</li>
+				<li class="resopt">
+					Option 2
+				</li>
+				<li class="resopt">
+					Option 3
+				</li>
+				<li class="resopt">
+					Option 4
+				</li>
+			</ul>
+		</div>
+	<div class="body2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed ex rutrum, pretium velit ut, tincidunt dolor. Donec pharetra nisl non mauris euismod, sit amet pharetra turpis mollis. Nulla sed porttitor erat. Donec ex turpis, dignissim vel convallis quis, fringilla sit amet felis. Curabitur tincidunt egestas mollis. Maecenas maximus eleifend sem eleifend pulvinar. Donec imperdiet diam dignissim elit mollis, et sodales magna vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur congue ultrices massa vitae placerat. Pellentesque in luctus erat. Maecenas sed turpis in ipsum pharetra maximus sed et dui. Aliquam eu nunc id erat fringilla pretium at sit amet ante.
+<br><br><br><br><br><br><br><br><br><br><br>
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie venenatis lorem quis eleifend. Fusce varius tristique odio, in lacinia magna consequat id. Donec tempor hendrerit arcu, ut facilisis neque venenatis id. Suspendisse ut turpis tempus mauris elementum sodales. Cras vitae purus sed libero pulvinar fringilla. Aliquam facilisis diam in eros eleifend tempor sed eu felis. Integer suscipit congue ipsum in ullamcorper.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed ex rutrum, pretium velit ut, tincidunt dolor. Donec pharetra nisl non mauris euismod, sit amet pharetra turpis mollis. Nulla sed porttitor erat. Donec ex turpis, dignissim vel convallis quis, fringilla sit amet felis. Curabitur tincidunt egestas mollis. Maecenas maximus eleifend sem eleifend pulvinar. Donec imperdiet diam dignissim elit mollis, et sodales magna vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur congue ultrices massa vitae placerat. Pellentesque in luctus erat. Maecenas sed turpis in ipsum pharetra maximus sed et dui. Aliquam eu nunc id erat fringilla pretium at sit amet ante.
+<br><br><br><br><br><br><br><br><br><br><br>
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie venenatis lorem quis eleifend. Fusce varius tristique odio, in lacinia magna consequat id. Donec tempor hendrerit arcu, ut facilisis neque venenatis id. Suspendisse ut turpis tempus mauris elementum sodales. Cras vitae purus sed libero pulvinar fringilla. Aliquam facilisis diam in eros eleifend tempor sed eu felis. Integer suscipit congue ipsum in ullamcorper. </div>
+
+
+
+
+
+<script>
+	document.getElementById("togbut").onclick=function() {
+	var element=document.getElementById("resmenu");
+	if (document.getElementById("resmenu").classList.contains('dropdownanim')){
+		element.classList.remove("dropdownanim");
+		element.classList.add("dropupanim");
+		console.log("Not found");
+		console.log(element.classList)
+	}
+	// element.classList.remove("dropupanim"); 
+	else{
+		element.classList.add("dropdownanim");
+		element.classList.remove("dropupanim");
+		console.log("Found");
+		console.log(element.classList)
+	}
+	}
+	
+
+</script>
+
+</body>
+</html>
+
+

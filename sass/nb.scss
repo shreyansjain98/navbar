@@ -1,0 +1,156 @@
+body{
+	margin:0;
+}
+
+.nbcontainer{
+	color:white;
+	position:fixed;
+	top:0;
+	margin:0 auto; /* Will not center vertically and won't work in IE6/7. */
+	left: 0;
+	right: 0;
+	// height:100px;
+	z-index:1;
+	margin-bottom:10px;
+	width:90%;
+	padding-left:10px;
+	padding-right:10px;
+	background-color:darkblue;
+	@media only screen and(max-width: 768px){
+		width:100%;
+		padding:0;
+	}
+
+}
+.togbut{
+	display:none;
+	padding-right: 10px;
+	cursor:pointer;
+}
+.logopic{
+	height:80px;
+}
+.nbpart{
+	height:80px;
+	// line-height:100px;
+	display:inline-block;
+	width:49.5%;
+	@media only screen and(max-width: 768px){
+		width:49%;
+	}
+}
+.logo{
+	// vertical-align: middle;
+	// width:49.5%;
+}
+.menu{
+	// position:absolute;
+	// left: 400px;
+	// top:0;
+	// right:0;
+	// position:absolute;
+	// width:49.5%;
+}
+.menulist{
+	// width:100%;
+	font-size:17px;
+	line-height:4.5;
+  	display: inline-block;
+  	// vertical-align: middle;
+	float:right;
+	// position:absolute;
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	// margin-left: 500px;
+	// vertical-align: middle;
+	@media only screen and(max-width: 768px){
+		.togbut{
+			display:block;
+		}
+		.opt{
+			display:none;
+		}
+	}
+}
+.opt{
+	display:inline-block;
+}
+
+#resmenu{
+	position:fixed;
+	top:80px;
+	opacity:0;
+	// height:0px;
+	width:0%;
+	margin-left:auto; /* Will not center vertically and won't work in IE6/7. */
+	left: 0;
+	right: 0;	
+	color:white;
+	padding-top: 30px;
+	background-color: darkblue;
+	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+}
+.dropdownanim{
+	animation: dropdown 0.3s;
+	animation-fill-mode: both;
+  	// height:200px;
+}
+.dropdownanimht{
+	// height:200px;
+}
+@keyframes dropdown {
+	from {
+		// height: 0px; 
+		width:0%;
+		// padding-top:30px; 
+		opacity:0;
+	}
+	to {
+		// height: 180px;
+		width:100%; 
+		// padding-top:30px; 
+		opacity:1;
+	}
+}
+
+.dropupanim{
+	animation: dropup 0.3s;
+	animation-fill-mode: both;
+  	// height:200px;
+}
+.dropupanimht{
+	// height:0px;
+}
+@keyframes dropup {
+	from {
+		// height: 180px; 
+		width:100%;
+		// padding-top:30px; 
+		opacity:1;
+	}
+	to {
+		// height: 0px; 
+		width:0%;
+		// padding-top:30px; 
+		opacity:0;
+	}
+}
+
+.resmenulist{
+	list-style-type: none;
+	padding:0;
+	margin:0;
+	text-align:center;
+	li{
+		padding:10px;
+	}	
+}
+
+.xs{
+	color:black;
+}
+
+.body2{
+	margin-top: 100px;
+}
